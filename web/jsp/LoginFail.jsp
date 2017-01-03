@@ -21,8 +21,6 @@
 	<h3>err</h3>
 <% } %>
 
-
-
 <form action="login.user" method="get">
 	<input class="btn" type="submit" value="重新登录" />
 </form>
