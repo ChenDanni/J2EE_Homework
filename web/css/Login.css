@@ -1,0 +1,37 @@
+body {
+	width: 100%;
+	font-family: "Microsoft YaHei";
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#login-info {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+#login-table {
+	border-spacing: 0 20px;
+}
+#login-title {
+	margin-top: 100px;
+	margin-right: 60px;
+	color: #3a3751;
+}
+.btn {
+	background-color: white;
+	width:80px;
+	height:30px;
+	border-width: 1px;
+	border-color: darkgrey;
+	font-size: 14px;
+	border-radius: 4px;
+}
+.input-text{
+	font-size: 14px;
+	height:30px;
+	border-radius: 4px;
+}
