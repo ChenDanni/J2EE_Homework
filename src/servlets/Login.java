@@ -111,17 +111,8 @@ public class Login extends HttpServlet {
 			total--;
 			context.setAttribute("total", Integer.toString(total));
 			response.sendRedirect(request.getContextPath() + "/jsp/Login.jsp");
-		}else if (session == null){
+		}else {
 			response.sendRedirect(request.getContextPath() + "/jsp/Login.jsp");
-		}else{
-			if (request.getSession().getAttribute("login") == null){
-				System.out.println("login = NULL");
-				response.sendRedirect(request.getContextPath() + "/jsp/Login.jsp");
-			}
-			else 
-//				response.sendRedirect(request.getContextPath() + "/TestPage");
-				context.getRequestDispatcher("/ExamsInfo").forward(request, response);
-			
 		}
 	}
 
@@ -160,8 +151,8 @@ public class Login extends HttpServlet {
 				context.setAttribute("total", Integer.toString(total));
 				context.setAttribute("login", Integer.toString(login));
 				
-				context.getRequestDispatcher("/ExamsInfo").forward(request, response);
-//				response.sendRedirect(request.getContextPath() + "/TestPage");
+//				context.getRequestDispatcher("/ExamsInfo").forward(request, response);
+				response.sendRedirect("/ExamsInfo");
 				
 			}
 		}else if (loginState == LoginState.USERNOTEXIST) {

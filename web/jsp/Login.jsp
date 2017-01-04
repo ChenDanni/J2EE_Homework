@@ -9,6 +9,7 @@
 <title>登录</title>
 </head>
 <body>
+<MyTag:CheckSession/>
 	<div class="container">
 		<div id="login-title">
 			<h1>测试成绩查询</h1>
@@ -43,10 +44,6 @@
 		</div>
 
 	</div>
-
-	<MyTag:CheckSession/>
-
-	<% response.sendRedirect("/jsp/ExamsInfo.jsp"); %>
 
 </body>
 </html>

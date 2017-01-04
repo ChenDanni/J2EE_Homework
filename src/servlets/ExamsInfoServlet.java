@@ -83,8 +83,8 @@ public class ExamsInfoServlet extends HttpServlet {
                 session.setAttribute("examsInfo", examsInfo);
 				session.setAttribute("statistics", statistics);
 				session.setAttribute("states", states);
-//				context.getRequestDispatcher("/jsp/ExamsInfo.jsp").forward(request, response);
-				response.sendRedirect("/jsp/ExamsInfo.jsp");
+				context.getRequestDispatcher("/jsp/ExamsInfo.jsp").forward(request, response);
+//				response.sendRedirect("/jsp/ExamsInfo.jsp");
 			}
 		}catch (Exception e) {
 			e.printStackTrace();
