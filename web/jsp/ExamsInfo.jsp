@@ -9,6 +9,9 @@
 <title>测验查询结果</title>
 </head>
 <body>
+
+
+
 <jsp:useBean id="examsInfo"
 	type = "action.business.ExamsInfoBean"
 	scope = "session"></jsp:useBean>
