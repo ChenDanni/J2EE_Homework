@@ -1,0 +1,55 @@
+body {
+    font-family: "Microsoft YaHei";
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#warning {
+    color: red;
+}
+
+table td{
+    border: 1px solid darkgray;
+}
+#statistics {
+    display: flex;
+    flex-direction: row;
+}
+.number-info {
+    margin-right: 16px;
+}
+.btn {
+    background-color: white;
+    width:80px;
+    height:30px;
+    border: 1px solid darkgray;
+    font-size: 14px;
+    border-radius: 4px;
+}
+#exams-info-table{
+    width:500px;
+    line-height:30px;
+    margin:15px 0;
+    border:0;
+}
+#exams-info-table ,#exams-info-table th,#exams-info-table td {
+    font-size:0.95em;
+    text-align:center;
+    padding:4px;
+    border-collapse:collapse;
+}
+#exams-info-table  th,#exams-info-table  td {
+    border: 1px solid darkgrey;
+    border-width:1px 0 1px 0
+}
+#exams-info-table  tr{
+    border: 1px solid darkgrey;
+    background-color:#fdfdfd;
+}
+#exams-info-table  tr:first-child{
+    background-color:darkgray;
+    color: #FFFFFF;
+}
